@@ -372,20 +372,17 @@
         $('.cross').click(function(){
             $('#menu').toggleClass('active');
         });
-
-        // function toggle() {
-        //     var a = document.querySelector('.menu');
-        //     // 要選擇文件中的哪一個
-        //     a.classList.toggle('active');
-        //     //命令選擇的東西做甚麼樣的事情 .active
-        //     var b = document.querySelector('.line1');
-        //     var c = document.querySelector('.line2');
-        //     var d = document.querySelector('.line3');
-        //     b.classList.toggle('line1t');
-        //     c.classList.toggle('line2t');
-        //     d.classList.toggle('line3t');
-        // }
-        
+    </script>
+    <!-- Fix Nav -->
+    <script>
+        $(window).scroll(function(){
+            var scroll = $(window).scrollTop();
+            if(scroll > 100){
+                $(".logo").addClass("fixed");
+            }else{
+                $(".logo").removeClass("fixed");
+            }
+        });
     </script>
 </body>
 

@@ -816,8 +816,10 @@
         .fonav{
             display: none;
         }
-       
-       
+        .logo.fixed{
+            position: fixed;
+            z-index: 9999;
+        }
         .top{ 
             text-align: left;
             padding: 0 50px 0 65px;
