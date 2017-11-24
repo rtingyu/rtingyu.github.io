@@ -1,0 +1,915 @@
+* {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .clear {
+            clear: both;
+        }
+        
+        .logo{
+             position: relative;
+        }
+
+        .logo img{
+            width: 100%;
+            display: block;
+        }
+
+        .nav {
+            color: #fff;
+            width: 100%;
+            height: 45px;
+            background-color: rgb(238, 132, 162);
+             }
+
+        .nav a {
+            text-decoration: none;
+            color:rgb(243, 213, 213);
+        }
+        .nav li{
+             width: 20%;
+        }
+        
+
+        .nav>ul>li:hover {
+            
+            background-color: rgb(248, 201, 230);
+        }
+        .nav li:hover a{
+            color: rgb(236, 87, 204);
+        }
+
+
+        .nav ul > li:nth-last-of-type(1):hover {
+            background-color: transparent;
+            /* nth-last-child(1)從物件後面數來第1個
+               背景設為透明 */
+            /* li:nth-last-of-type(1)只會選到li的倒數第一個 */
+        }
+
+
+
+
+        .nav ul {
+
+            list-style: none;
+            text-align: center;
+            margin-left: 0px;
+            -webkit-padding-start: 0;
+            margin: 0;
+        }
+
+        .nav li {
+            color: #fff;
+            display: inline;
+            font-size: 20px;
+            padding: 12px 15px;
+            line-height: 45px;
+            margin: 10px 10px;
+            position: relative;
+        }
+
+        .nav .search {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            top: 14px;
+            right: 25px;
+        }
+
+        .askInput {
+            width: 150px;
+            height: 30px;
+            font-size: 20px;
+        }
+
+        .fonav{
+            color: rgba(32, 32, 32, 0.5);
+            width: 60%;
+            /* 680px */
+            height: 40px;
+            background-color: rgba(218, 159, 159, 0.5);
+            position: absolute;
+            /* right:260px; */
+            top:15px;
+            left:45px;
+        }
+        .fonav > ul {
+            list-style: none;
+            text-align: center;
+            margin-left: 0px;
+            margin: 0;
+            padding-left: 0;
+            
+        }
+        .fonav > ul > li{
+            color: rgb(37, 37, 37);
+            /* display: inline-block; */
+            font-size: 18px;
+            padding: 10px 10px;
+            float: left;
+            width:20%;
+            box-sizing: border-box;
+            
+         
+        }
+        .fonav a {
+            text-decoration: none;
+            color:rgb(145, 90, 90);
+        }
+        .fonav li:hover a {
+            color: rgb(255, 255, 255);
+        }
+
+        /* 搜尋列的設定 */
+        .bg {
+            width: 100%;
+            height: calc(100vh - 150px);
+            background-size: cover;
+            background-position: center;
+        }
+        .img1{
+            background-image: url('../img/BG1.gif');
+        }
+
+        .img2{
+            background-image: url('../img/img2.jpg');
+        }
+
+        .img3{
+            background-image: url('../img/img3.jpg');
+        }
+        .unslider-arrow {
+            top: 50%;
+            color: rgb(247, 247, 247);
+            /* 箭頭class屬性 */
+            
+        }
+         .unslider-arrow.next {
+            top: 50%;
+        }
+
+        .unslider {
+            position: relative;
+        }
+
+        /* banner最外面那層 */
+
+        .unslider-nav {
+            position: absolute;
+            bottom: 10px;
+            left: 48.5%;
+            /* 下面圈圈那層 */
+        }
+
+        .aboutus {
+            background-color: #f9ccb9;
+            width: 100%;
+            /* 高度不能設死 */
+            text-align: center;
+            
+
+        }
+
+        .top {
+            display: inline-block;
+            /* inline-block會隨著字自己長寬度 */
+            height: 130px;
+            margin: 0 auto;
+            text-align: left;
+            color: #000000;
+            font-size: 20px;
+        }
+
+        .top p {
+            line-height: 30px;
+        }
+
+        .bottom {
+            width: 100%;
+            /* background-color: #000; */
+            margin: 0 auto;
+            padding: 0 180px;
+
+        }
+
+        .bottom1,
+        .bottom2,
+        .bottom3 {
+            float: left;
+            width: 33.3%;
+            padding: 8px 20px 20px 20px;
+        }
+        .food_a img{
+            display: block;
+            max-width: 100%;
+        }
+        .food_b{
+            padding-bottom: 10px;
+            /* border: 1px solid #000; */
+            background-color: rgb(231, 231, 231);
+        }
+        .fm{
+            margin:0 auto;
+            padding-top:13px;
+            font-size: 18px;
+            color:rgb(32, 112, 57);
+            font-weight: 500;
+            /* 設粗體100~900數值，但有些不支援漸進式的字體 只有粗體&細體 */
+        }
+        .fm_d{
+            text-align: left;
+            margin:9px 5px 0px 40px;
+            line-height: 1.4;
+            font-size: 15px;
+            color:rgb(58, 50, 14);
+        }
+
+        .bottom1>div {
+            width: 100%;
+            height: 100%;
+            
+        }
+
+        .bottom2>div {
+            width: 100%;
+            height: 100%;
+            
+        }
+
+        .bottom3>div {
+            width: 100%;
+            height: 100%;
+            /* background-image: url("img/butter.png"); */
+            /* background-size: cover; */
+        }
+
+        .product-item {
+            position: relative;
+            float: left;
+            width: 25%;
+            height: 300px;
+            padding: 20px;
+            box-sizing: border-box;
+            font-size: 22px;
+            /* font-weight: 900px; */
+           
+        }
+        .product1{
+            width: 100%;
+            height: 100%;
+            background-image: url("../img/product-cake1.gif");
+            background-size: cover;
+            background-position: center; 
+            
+        }
+       
+
+        .product2{
+            width: 100%;
+            height: 100%;
+            background-image: url("../img/product-cake2.gif");
+            background-size: cover;
+            background-position: center; 
+        }
+
+        .product3{
+            width: 100%;
+            height: 100%;
+            background-image: url("../img/product-cake3.gif");
+            background-size: cover; 
+            background-position: center; 
+        }
+
+        .product4{
+            width: 100%;
+            height: 100%;
+            background-image: url("../img/product-cake4.gif");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .product5{
+            width: 100%;
+            height: 100%;
+            background-image: url("../img/product-cake5.gif");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .product6{
+            width: 100%;
+            height: 100%;
+            background-image: url("../img/product-cake6.gif");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .product7{
+            width: 100%;
+            height: 100%;
+            background-image: url("../img/product-cake7.gif");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .product8{
+            width: 100%;
+            height: 100%;
+            background-image: url("../img/product-cake8.gif");
+            background-size: cover;
+            background-position: center;
+        }
+        .cover{
+            position: absolute;
+            background-color: rgba(206, 186, 186, 0.8);
+            width: calc(100% - 40px);
+            height:45%;
+            bottom: 20px;
+            padding: 10px ;
+            opacity: 0;
+            transition: 1s;
+            
+        }
+        /* 要絕對定位在produt item那層 */
+        .product-item:hover .cover{
+            opacity: 1;
+        }
+       
+
+        h2,
+        h3 {
+            text-align: center;
+            color: #b36506;
+        }
+
+        h2 {
+            margin: 0 0 25px 0;
+            padding-top: 30px;
+        }
+        
+
+        h3 {
+            color: rgb(240, 140, 59);
+            margin:20px auto;
+        }
+
+        .pmremovetop {
+            margin-top: 0;
+            color:rgb(58, 50, 14);
+        }
+
+        .food {
+            margin-top: 30px;
+        }
+
+        .pre {
+            background-color: #f9ccb9;
+        }
+
+        .news_l {
+            float: left;
+            width: 31%;
+            height: 94%;
+        
+            background-image: url("../img/news2.gif");
+            background-size: cover; 
+            background-position: center;
+
+
+        }
+
+        .news_r {
+            float: left;
+            width: 69%;
+            height: 95%;
+            background-color: rgba(209, 208, 208, 0.5);
+
+        }
+        .news_r .unslider{
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .news_r .unslider-nav{
+          bottom: 20px;
+        }
+       
+
+        /* 置中要設定加起來剛好100%才有意義 */
+
+        .new_contain {
+            width: 70%;
+            height: 335px;
+            margin: 15px auto;
+        }
+
+        .message {
+            width: 100%;
+            height: 580px;
+            background-image: url("../img/bg2.png");
+        }
+
+        .message_contain {
+            width: 60%;
+            height: 65%;
+            margin: 25px auto;
+            background-image: url("../img/bg1.png");
+            background-size: contain;
+            background-position: center;
+
+        }
+
+        .msi {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .msimessage{
+            margin-bottom: 12px;
+        }
+
+        .msi span {
+            display: inline-block;
+            vertical-align: top;
+            /* 靠上排列 */
+            min-width: 81.5px;
+            text-align: right;
+        }
+
+        .ms_1 {
+            float: left;
+            width: 35%;
+            height: 65vh;
+
+            background-image: url("../img/message.gif");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .ms_r {
+            float: left;
+            width: 65%;
+            height: 65vh;
+
+            /* background-image: url("img/message.jpg"); */
+            text-align: center;
+        }
+
+        .ms_r .ms_p {
+            width: 80%;
+            text-align: left;
+            margin: 35px auto 0px auto;
+        }
+
+        .askInput_mail {
+            width: 200px;
+            height: 30px;
+            font-size: 20px;
+        }
+
+        .askInput_message {
+            width: calc(100% - 150px);
+            height: 150px;
+            font-size: 20px;
+            
+        }
+        .footer{
+            background-color: #f9ccb9;
+            width: 100%;;
+            /* height:220px; */
+            
+        }
+        /* .fo{ 
+            width: 33.3%;
+            height:100%;
+            float: left;
+        }*/
+
+        .foleft{
+            width: 25%;
+            height:100%;
+            float: left;
+            text-align:right;
+           /* border: 1px solid #000; */
+        }
+        /* .fomid{ 
+            /* border: 1px solid #000; 
+            text-align: center;
+        }*/
+
+        
+        .foright .folr{
+            
+             display:inline-block;
+             /* 隨著內容長高度 */
+             text-align: left;
+             /*靠左對齊 */
+            margin-bottom: 30px;
+        }
+
+        .foright{
+            width: 75%;
+            height:100%;
+            float: left;
+            text-align: left;
+            position: relative;
+            /* border: 1px solid #000; */
+           
+        }
+        
+        .foright .fole{
+            display: inline-block;
+            text-align: left;
+            margin-left: 190px;
+            margin-top: 50px;
+        }
+      
+        
+
+        .foright > .folr > a{
+            float:left;
+            margin:0 5px;
+            
+        }
+        .product_top,.product_bottom{
+            margin:0 100px;
+        }
+        .product_top{
+           
+            margin-top: 60px;
+        }
+        .product_bottom{
+            
+            margin-bottom:60px;
+        }
+        .pret{
+            padding:20px; ;
+        }
+        .btn{
+            width:calc(100% - 60px);
+            text-align: right;
+        }
+        .btnm{
+            margin:0 5px;
+            padding: 5px 8px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        .nm{
+            margin:35px auto;
+            color:rgb(58, 50, 14);
+            font-size:20px;
+        }
+        .news_r .unslider-nav ol li{
+            width:14px;
+            height:14px;
+            border-radius: 10px;
+        }
+        .news_r .unslider-nav{
+            left:50%;
+            margin-left:-33px; 
+        }
+        .pt{
+            margin:10px auto 0 10px;
+            margin-left: 10px;
+            font-size: 17px;
+        }
+        .pp{
+            font-size: 15px;
+            margin:5px auto;
+            
+        }
+        .price{
+            color:rgb(240, 116, 116);
+            font-size:18px;
+            margin-left:10px;
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            background-color: rgb(221, 168, 147);
+            display: inline-block;
+            line-height: 50px;
+            text-align: center;
+            /* style預設是inline要把這個屬性改掉 */
+        }
+        .pmt{
+            margin-left:10px;
+        }
+        .fname{
+            margin:0 10px;
+        }
+        .icon{
+            float: left;
+            width: 50px;
+            height: 50px;
+            display: block;
+        }
+        .fol{
+            width: 40%;
+            height: 100%;
+           }
+           .cell_nav{
+               position: absolute;
+               top:30px;
+               left:30px;
+           }
+
+        .cross{
+  width:50px;
+  height:50px;
+  /* border:solid 2px rgb(255, 255, 255); */
+  position: relative;
+  background-color: rgb(236, 157, 170);
+  border-radius:20%; 
+  }
+    .cross .line1
+    {
+    position: absolute;
+    width:30px;
+    height:5px;
+    background-color: rgb(255, 255, 255);
+    top:30%;
+    left:50%;
+    /* 外層 */
+    transform: translate(-50%, -50%);
+    /* 內層 transform偏移 */
+    transition-duration: 0.5s;
+    }
+
+    .cross .line2{
+    position: absolute;
+    width:30px;
+    height:5px;
+    background-color: rgb(255, 255, 255);
+    top:50%;
+    left:50%;
+    /* 外層 */
+    transform: translate(-50%, -50%);
+    /* 內層 transform偏移 */
+    transition-duration: 0.5s;
+    }
+
+    .cross .line3{
+    position: absolute;
+    width:30px;
+    height:5px;
+    background-color: rgb(255, 255, 255);
+    top:70%;
+    left:50%;
+    /* 外層 */
+    transform: translate(-50%, -50%);
+    /* 內層 transform偏移 */
+    transition-duration: 0.5s;
+    }
+
+    .cross .line1t{
+     transform: translate(-50%, -50%) rotate(-45deg);
+     top:50%;
+  
+    }
+    .cross .line2t{
+
+     opacity: 0;
+     }
+
+    .cross .line3t{
+     transform: translate(-50%, -50%) rotate(45deg);
+     /* rotate旋轉 deg度 先寫的會先運作 先偏移在旋轉 */
+     top:50%;
+     /* 要先把位移調回置中 */
+     }
+
+.menu{
+  width:100%;
+  line-height:50px;
+  text-align: center;
+  opacity: 1;
+}
+
+.menu.active .contain a{  
+  padding: 10px;
+  opacity:1 ; 
+  height:auto;
+}
+
+.menu .contain a{
+   padding:0;
+   display:block;
+   background-color: rgb(250, 103, 103);
+   transition:1s;
+   height:0;
+   opacity:0;
+   /* transition寫在要慢出現的地方 高度和透明度先設為0 */
+/* 這行讓文字垂直 */
+/* 類別之間要空格 */
+}
+
+.menu a:nth-child(1){
+    transition-delay: 0s;
+}
+
+.menu a:nth-child(2){
+    transition-delay: 0.5s;
+}
+
+.menu a:nth-child(3){
+    transition-delay: 1s;
+}
+
+.menu a:nth-child(4){
+    transition-delay: 1.5s;
+}
+
+.menu a:nth-child(5){
+    transition-delay: 2s;
+}
+
+.menu.active a:nth-child(1){
+    transition-delay: 0s;
+}
+
+.menu.active a:nth-child(2){
+    transition-delay: 0.5s;
+}
+
+.menu.active a:nth-child(3){
+    transition-delay: 1s;
+}
+
+.menu.active a:nth-child(4){
+    transition-delay: 1.5s;
+
+}
+
+.menu.active a:nth-child(5){
+    transition-delay: 2s;
+}
+
+
+        
+          
+           /* 螢幕小於779會執行 */
+         @media screen and (max-width: 1400px){
+          .fol{
+              width: 30%;
+          }
+         }
+       
+        @media screen and (max-width: 1246px){ 
+        .top{ 
+            text-align: left;
+            padding: 0 100px 0 115px;
+        }
+        .fm_d{
+            margin:9px 2px 0 20px;
+            }
+        .bottom {
+            padding: 0 160px;
+            }
+        .message_contain {
+            width: 90%;
+            height: 80%;
+        }
+        .fonav{
+            width:80%;
+        }
+    }
+       
+
+       @media screen and (max-width: 1075px){
+
+        .bottom {
+            padding: 0 150px;
+
+        }
+       }
+        @media screen and (max-width: 970px) { 
+        .news_l {
+            display: none;
+        }
+
+        .news_r {
+             width: 100%;
+        }
+        
+        .cover{
+         height:80%;
+        }
+        .foleft{
+            display: none;
+        }
+        .fol{
+              width: 50%;
+          }
+        
+        
+    }
+
+        
+        @media screen and (max-width: 767px) { 
+        .fonav{
+            display: none;
+        }
+       
+       
+        .top{ 
+            text-align: left;
+            padding: 0 50px 0 65px;
+        }
+        .food_b{
+            
+            height:50%;
+        }
+        .bottom {
+            width: 100%;
+            /* background-color: #000; */
+            margin: 0 auto;
+            padding: 0 40px;
+
+        }
+        .bottom1,.bottom2,.bottom3 {
+            width: 100%;
+            /* height: 300px;  */
+            padding: 8px 20px 20px 20px;
+        }
+        .product_top,.product_bottom{
+           margin-top:40px;
+        }
+        .product-item {
+            width:50%;;
+            height: 147px;
+            padding: 10px;
+        }
+        .product_top,.product_bottom{
+            margin:0 40px;
+        }
+        .foright{
+            width:100%;
+        }
+        .foright .fole{
+            margin-left: 0;
+            padding-left: 80px;
+            margin-top: 10px;
+        }
+        .fol{
+            width: 100%;
+            height: 100%;
+           }
+        .foright .folr{
+            margin-bottom: 5px;
+            margin-left: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .folr{
+            margin-top:20px;
+        }
+        .cover{
+         width: 90%;
+         height:100%;
+        }
+        .new_contain{
+            width: 90%;
+        }
+        .message_contain {
+            width: 100%;
+            height: 80%;
+        }
+    }
+     @media screen and (max-width: 726px) { 
+        .nav{
+            display: none;
+        }
+        .fm_d{
+            margin:9px 0 0 37px;
+            }
+       
+        }
+    @media screen and (max-width: 560px){
+        .ms_1 {
+          display: none;
+        }
+        .ms_r{
+            width: 100%;
+            height: 80%;
+        }
+    }
+    
+    @media screen and (max-width: 450px){
+            /* position: fixed; */
+    }
+        
+        
+    
+
+    
+    
+    
+
+       
