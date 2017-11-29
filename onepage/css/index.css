@@ -151,12 +151,20 @@ body {
 
 .bg {
     width: 100%;
-    height: calc(100vh - 150px);
+    /* height: calc(100vh - 150px); */
     background-size: cover;
     background-position: center;
 }
 
-.img1 {
+.bg>img {
+    width: 100%;
+    display: block;
+    /* div包img會留白因為有display:inline屬性，所以要用dispaly:block消掉
+    img in div white space */
+}
+
+
+/* .img1 {
     background-image: url('../img/BG1.gif');
 }
 
@@ -166,7 +174,7 @@ body {
 
 .img3 {
     background-image: url('../img/img3.jpg');
-}
+} */
 
 .unslider-arrow {
     top: 50%;
@@ -921,19 +929,16 @@ h3 {
     }
 }
 @media screen and (max-width: 767px) {
-
-
-    .fonav {
+    .unslider-arrow {
         display: none;
     }
     /* .cross {
         display: block;
     } */
-
     /* #backtoTop {
         display: none !important;
         /*加impotrant會先吃 */
-    /* } */ 
+    /* } */
     /* .logo.fixed {
         position: fixed;
         z-index: 9999;
@@ -1041,8 +1046,6 @@ h3 {
     }
 }
 @media screen and (max-width: 560px) {
-  
-
     .logo.fixed {
         position: fixed;
         z-index: 9999;
