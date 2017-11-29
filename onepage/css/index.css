@@ -930,10 +930,10 @@ h3 {
         display: block;
     } */
 
-    #backtoTop {
+    /* #backtoTop {
         display: none !important;
         /*加impotrant會先吃 */
-    }
+    /* } */ 
     /* .logo.fixed {
         position: fixed;
         z-index: 9999;
