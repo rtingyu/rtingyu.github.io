@@ -161,7 +161,7 @@ body {
 }
 
 .img2 {
-    background-image: url('../img/img2.jpg');
+    background-image: url('../img/BG2.jpg');
 }
 
 .img3 {
@@ -404,6 +404,7 @@ h3 {
     background-color: #f9ccb9;
 }
 
+
 /* .pr {
     position: relative;
 }
@@ -412,7 +413,9 @@ h3 {
     content: '';
     background-image: url("../img/1.png");
     /* width: 140px; */
-    /* width: 15%;
+
+
+/* width: 15%;
     height: 40px;
     position: absolute;
     z-index: 9999;
@@ -420,7 +423,7 @@ h3 {
     transform: translatey(-15px);
   
 }
-.pre::after {}  */ 
+.pre::after {}  */
 
 .news_l {
     float: left;
@@ -918,23 +921,23 @@ h3 {
     }
 }
 @media screen and (max-width: 767px) {
+
+
     .fonav {
         display: none;
     }
-
-    .cross {
+    /* .cross {
         display: block;
-    }
+    } */
 
     #backtoTop {
         display: none !important;
-        /* 加impotrant會先吃 */
+        /*加impotrant會先吃 */
     }
-
-    .logo.fixed {
+    /* .logo.fixed {
         position: fixed;
         z-index: 9999;
-    }
+    } */
 
     .top {
         text-align: left;
@@ -1025,6 +1028,10 @@ h3 {
     }
 }
 @media screen and (max-width: 726px) {
+    .cross {
+        display: block;
+    }
+
     .nav {
         display: none;
     }
@@ -1034,6 +1041,13 @@ h3 {
     }
 }
 @media screen and (max-width: 560px) {
+  
+
+    .logo.fixed {
+        position: fixed;
+        z-index: 9999;
+    }
+
     .ms_1 {
         display: none;
     }
