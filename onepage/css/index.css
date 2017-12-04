@@ -194,12 +194,17 @@ body {
 /* banner最外面那層 */
 
 .unslider-nav {
+    
     position: absolute;
     bottom: 10px;
     left: 50%;
     /* 下面圈圈那層 */
     /* margin-left: -21px; */
     transform: translateX(-50%);
+}
+
+.s1 .unslider-nav ol li{
+    display: none;
 }
 
 .aboutus {
@@ -409,7 +414,8 @@ h3 {
 }
 
 .pre {
-    background-color: #f9ccb9;
+    background-color: #f9ccb9; 
+   
 }
 
 
@@ -602,10 +608,10 @@ h3 {
             float: left;
             text-align: left;
             position: relative;
-            /* border: 1px solid #000; */
+            /* border: 1px solid #000; 
 
 
-}
+}*/
 */ .foright>.folr>a {
     float: left;
     margin: 0 5px;
@@ -648,6 +654,7 @@ h3 {
     width: 14px;
     height: 14px;
     border-radius: 10px;
+    /* news下方的圈圈 */
 }
 .news_r .unslider-nav {
     left: 50%;
@@ -885,9 +892,26 @@ h3 {
         width: 68%;
     }
 }
+@media screen and (max-width: 1080px){
+    .product_top,.product_bottom{
+            margin:0 80px;
+           
+    }
+}
 @media screen and (max-width: 1075px) {
     .bottom {
         padding: 0 150px;
+    }
+}
+@media screen and (max-width: 1020px) {
+  .bottom{
+      padding: 0 120px;
+  }
+}
+@media screen and (max-width: 1050px){
+    .product_top,.product_bottom{
+            margin:0 80px;
+           
     }
 }
 @media screen and (max-width: 970px) {
@@ -927,6 +951,12 @@ h3 {
         padding-left: 0px;
         box-sizing: border-box;
     }
+}
+@media screen and (max-width: 950px){
+    .product_top,.product_bottom{
+        margin:0 60px;
+       
+}
 }
 @media screen and (max-width: 767px) {
     .unslider-arrow {
@@ -1059,10 +1089,28 @@ h3 {
         width: 100%;
         height: 80%;
     }
+    #backtoTop{
+        width: 45px;
+        height: 45px;
+        right: 20px;
+    }
 }
 @media screen and (max-width: 401px) {
     .no {
         display: inline-block;
         opacity: 0;
+    }
+    #backtoTop{
+        width: 50px;
+        height: 50px;
+        right: 20px;
+    }
+    
+}
+@media screen and (max-width: 350px){
+    #backtoTop{
+        width: 40px;
+        height: 40px;
+        right: 20px;
     }
 }
